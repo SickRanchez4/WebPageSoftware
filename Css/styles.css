@@ -1,0 +1,167 @@
+:root{
+    --primary-color: rgb(61, 79, 131);
+    --secundary-color: rgb(167, 136, 26);
+    --bg-color: rgb(200, 230, 255);
+}
+
+body{
+    font-family: 'Comfortaa', cursive;
+    background-color: var(--bg-color);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Boogaloo', cursive;
+    text-align: center;
+}
+
+h3 i{
+    margin-right: 10px;
+}
+
+ul li{
+    list-style: none;
+}
+    ul li i{
+        display: block;
+    }
+
+.main{
+    display: grid;
+    grid-template-columns: 16% 44%;
+    justify-content: center;
+}
+
+.previewImages{
+    height: 200px;
+    border: 3px solid var(--secundary-color);
+}
+
+.description{
+    padding: 2rem;
+}
+
+.leftSide{
+    padding: 0;
+    color: white;
+    background-color: var(--primary-color);
+    box-shadow: -10px 0 20px 0 black;
+    text-align: center;
+}
+
+.rightSide{
+    padding: 0;
+    color: black;
+    background-color: white;
+    box-shadow: 10px 0 20px 0 black;
+}
+    .rightSide *{
+        margin-right: 4px;
+    }
+
+.logoPicture{
+    height: 190px;
+}
+
+.profilePicture{
+    height: 200px;
+    border: 3px solid var(--secundary-color);
+    border-radius: 15px;
+}
+
+.label{
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--secundary-color);
+    text-align: center;
+    height: 238px;
+}
+.contactInfo{
+    margin-top: 2rem;
+    text-align: left;
+}
+
+    .contactInfo i{
+        margin-right: 10px;
+    }
+    .contactInfo li:hover{
+        color: var(--secundary-color);
+        cursor: pointer;
+    }
+
+.languages{
+    margin-top: 200px;
+    text-align: left;
+}
+    .languages li{
+        margin-top: 10px;
+    }
+    .languages li:hover{
+        color: var(--secundary-color);
+        cursor: pointer;
+    }
+
+.knowledge{
+    margin-top: 50px;
+    text-align: left;
+}
+    .knowledge li{
+        margin-top: 10px;
+    }
+
+    .knowledge li:hover{
+        color: var(--secundary-color);
+        cursor: pointer;
+    }
+
+.resume{
+    display: block;
+    padding: 2rem;
+    height: 220px;
+    font-size: 130%;
+    text-align: center;
+}
+
+.workExperience{
+    margin-top: 2rem;
+}
+
+    .workExperience li{
+        padding-top: 15px;
+        justify-content: space-around;
+    }
+
+.studies{
+    margin-top: 2rem;
+}
+
+    .studies li{
+        padding-top: 15px;
+        justify-content: space-around;
+    }
+
+/* Magic */
+.horizontalBar{
+    background-color: var(--secundary-color);
+    height: 1px;
+    margin: 10px;
+}
+
+.verticalBar{
+    background-color: var(--secundary-color);
+    height: inherit;
+    width: 1%;
+}
+
+.focused:hover{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 45px;
+    box-shadow: 0 0 10px 0 black;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px){
+    .main{
+        grid-template-columns: 100%;
+    }
+}
